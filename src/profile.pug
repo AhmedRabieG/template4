@@ -1,0 +1,187 @@
+extends include/layout
+block content
+    .page.d-flex
+        .slidebar.p-20.p-relative.bg-white 
+            h3.slidebar__title.mt-0.p-relative.txt-c.fs-20 Future Face
+            ul.slidebar__ulist
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="index.html") 
+                        i.fa-solid.fa-chart-column.fa-fw
+                        span Dashboard
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="settings.html") 
+                        i.fa-solid.fa-gear.fa-fw
+                        span Settings
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="profile.html") 
+                        i.fa-regular.fa-user.fa-fw
+                        span Profile
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="projects.html") 
+                        i.fa-solid.fa-diagram-project.fa-fw
+                        span Projects
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="courses.html") 
+                        i.fa-solid.fa-graduation-cap.fa-fw
+                        span Courses
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="friends.html") 
+                        i.fa-solid.fa-user-group.fa-fw
+                        span Friends
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="files.html") 
+                        i.fa-regular.fa-file.fa-fw
+                        span Files
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="plans.html") 
+                        i.fa-solid.fa-table-columns.fa-fw
+                        span Plans
+        .content.w-full             
+            //- start Header 
+            .head.bg-white.p-15.between-flex
+                .head__search.p-relative
+                    input.p-10(type="search" placeholder="type a key")
+                .head__icons.d-flex.align-center  
+                    span.icons__notification.p-relative 
+                        i.icons__notification--bell.fa-regular.fa-bell.fa-lg
+                    img.icons__user-img(src="assets/images/avatar.png" alt="avatar")
+            //- End Header 
+            h1.page-title.p-relative  Profile 
+            .profile-page.d-grid.m-20.gap-20
+                //- Start Overview Widget
+                .overview.bg-white.d-flex.align-center.rad-10
+                    .overview__avatar-box.txt-c.p-20
+                        img.overview__avatar-box__img.rad-half.mb-10(src="assets/images/avatar.png", alt="avatar")
+                        h3.m-0 Saad Asran
+                        p.c-gray.mt-10 Level 20 
+                        .overview__avatar-box__level.rad-6.bg-eee.p-relative
+                            span(style="width: 70%")
+                        .overview__avatar-box__rating.mt-10.mb-10
+                            i.fa-solid.fa-star.c-orange.fs-13
+                            i.fa-solid.fa-star.c-orange.fs-13
+                            i.fa-solid.fa-star.c-orange.fs-13
+                            i.fa-solid.fa-star.c-orange.fs-13
+                            i.fa-solid.fa-star.c-orange.fs-13
+                        p.m-0.c-gray.fs-13 550 Rating
+                    .overview__info-box.w-full.txt-c-mobile
+                        .overview__section.p-20.d-flex.align-center
+                            h4.c-grey.fs-17.m-0.w-full General Information
+                            div.fs-14 
+                                span.c-grey Full Name: 
+                                span Saad Asran
+                            div.fs-14 
+                                span.c-grey  Gender: 
+                                span Male
+                            div.fs-14 
+                                span.c-grey  Country: 
+                                span Egypt
+                            div.fs-14 
+                                label(for="")
+                                    input.toggle-checkbox(type="checkbox" checked) 
+                                    .toggle-switch
+
+                        .overview__section.p-20.d-flex.align-center
+                            h4.c-grey.fs-17.m-0.w-full General Information
+                            div.fs-14 
+                                span.c-grey Full Name: 
+                                span Saad Asran
+                            div.fs-14 
+                                span.c-grey  Gender: 
+                                span Male
+
+                            div.fs-14 
+                                span.c-grey  Country: 
+                                span Egypt
+                            div.fs-14 
+                                label(for="")
+                                    input.toggle-checkbox(type="checkbox" checked) 
+                                    .toggle-switch
+
+                        .overview__section.p-20.d-flex.align-center
+                            h4.c-grey.fs-17.m-0.w-full General Information
+                            div.fs-14 
+                                span.c-grey Full Name: 
+                                span Saad Asran 
+                            div.fs-14 
+                                span.c-grey  Gender: 
+                                span Male
+
+                            div.fs-14 
+                                span.c-grey  Country: 
+                                span Egypt
+                            div.fs-14 
+                                label(for="")
+                                    input.toggle-checkbox(type="checkbox" checked) 
+                                    .toggle-switch
+                //- End Overview Widget
+
+                //- Start Other Data Widget
+                .other-data.d-flex.gap-20
+                    .other-data__skilles-card.p-20.bg-white.rad-10.mt-20
+                        h2.mt-0.mb-10 My skills
+                        p.mt-0.mb-20.c-grey.fs-15 Complete Skills List
+                        ul.other-data__skilles-card__ulist.m-0.txt-c-mobile
+                            li 
+                                span HTML
+                                span Pugjs
+                                span HAML
+                            li 
+                                span CSS
+                                span SASS
+                                span Stylus
+                            li 
+                                span JavaScript
+                                span TypeScript
+                            li 
+                                span Vuejs
+                                span Reactjs
+                            li 
+                                span Jest
+                                span Jasmine
+                            li 
+                                span PHP
+                                span Laravel
+                            li 
+                                span Python
+                                span Django
+                    
+                    .other-data__activities.p-20.bg-white.rad-10.mt-20
+                        h2.mt-0.mb-10 Latest Activities
+                        p.mt-0.mb-20.c-grey.fs-15 Latest Activities Done By The User
+                        
+                        .other-data__activities__section.d-flex.align-center.txt-c-mobile
+                            img.other-data__activities__img(src="assets/images/activity-01.png", alt="acticity")
+                            .other-data__activities__info
+                                span.d-block.mb-10 Store
+                                span.c-grey Bought The Mastering Python Course
+                            .other-data__activities__date 
+                                span.d-block.mb-10 18:10
+                                span.c-grey Yesterday
+                        
+                        .other-data__activities__section.d-flex.align-center.txt-c-mobile
+                            img.other-data__activities__img(src="assets/images/activity-02.png", alt="acticity")
+                            .other-data__activities__info
+                                span.d-block.mb-10 Academy
+                                span.c-grey Got The PHP Certificate
+                            .other-data__activities__date 
+                                span.d-block.mb-10 16:05
+                                span.c-grey Yesterday
+
+                        .other-data__activities__section.d-flex.align-center.txt-c-mobile
+                            img.other-data__activities__img(src="assets/images/activity-03.png", alt="acticity")
+                            .other-data__activities__info
+                                span.d-block.mb-10 Badges
+                                span.c-grey Unlocked The 10 Skills Badge
+                            .other-data__activities__date 
+                                span.d-block.mb-10 18:05
+                                span.c-grey Yesterday
+                        
+                        .other-data__activities__section.d-flex.align-center.txt-c-mobile
+                            img.other-data__activities__img(src="assets/images/activity-01.png", alt="acticity")
+                            .other-data__activities__info
+                                span.d-block.mb-10 Store
+                                span.c-grey Bought The Mastering Python Course
+                            .other-data__activities__date 
+                                span.d-block.mb-10 12:05
+                                span.c-grey Yesterday            
+                //- End Other Data Widget

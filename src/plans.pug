@@ -1,0 +1,186 @@
+extends include/layout
+block content
+    .page.d-flex
+        .slidebar.p-20.p-relative.bg-white 
+            h3.slidebar__title.mt-0.p-relative.txt-c.fs-20 Future Face
+            ul.slidebar__ulist
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="index.html") 
+                        i.fa-solid.fa-chart-column.fa-fw
+                        span Dashboard
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="settings.html") 
+                        i.fa-solid.fa-gear.fa-fw
+                        span Settings
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="profile.html") 
+                        i.fa-regular.fa-user.fa-fw
+                        span Profile
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="projects.html") 
+                        i.fa-solid.fa-diagram-project.fa-fw
+                        span Projects
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="courses.html") 
+                        i.fa-solid.fa-graduation-cap.fa-fw
+                        span Courses
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="friends.html") 
+                        i.fa-solid.fa-user-group.fa-fw
+                        span Friends
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="files.html") 
+                        i.fa-regular.fa-file.fa-fw
+                        span Files
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="plans.html") 
+                        i.fa-solid.fa-table-columns.fa-fw
+                        span Plans
+        .content.w-full             
+            //- start Header 
+            .head.bg-white.p-15.between-flex
+                .head__search.p-relative
+                    input.p-10(type="search" placeholder="type a key")
+                .head__icons.d-flex.align-center  
+                    span.icons__notification.p-relative 
+                        i.icons__notification--bell.fa-regular.fa-bell.fa-lg
+                    img.icons__user-img(src="assets/images/avatar.png" alt="avatar")
+            //- End Header 
+            h1.page-title.p-relative  Plans 
+            .plans-page.m-20.d-grid.gap-20
+                .plans-page__plan.green.bg-white.rad-10.p-20
+                    .plans-page__plan__top.bg-green.p-20.txt-c.green
+                        h2.m-0.c-white.p-5  Free
+                        .plans-page__plan__price.c-white.p-10
+                            span $
+                                span 0.00 
+                    ul.plans-page__plan__ulist.m-0
+                        li
+                            i.fa-solid.fa-check.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-check.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-check.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                    a.plans-page__plan__link.btn-shape.bg-green.d-block.w-fit.c-white(href="#") Jion
+
+                .plans-page__plan.green.bg-white.rad-10.p-20
+                    .plans-page__plan__top.bg-green.p-20.txt-c.green
+                        h2.m-0.c-white.p-5  Free
+                        .plans-page__plan__price.c-white.p-10
+                            span $
+                                span 0.00 
+                    ul.plans-page__plan__ulist.m-0
+                        li
+                            i.fa-solid.fa-check.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-check.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-check.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                    a.plans-page__plan__link.btn-shape.bg-green.d-block.w-fit.c-white(href="#") Jion
+
+                .plans-page__plan.green.bg-white.rad-10.p-20
+                    .plans-page__plan__top.bg-green.p-20.txt-c.green
+                        h2.m-0.c-white.p-5  Free
+                        .plans-page__plan__price.c-white.p-10
+                            span $
+                                span 0.00 
+                    ul.plans-page__plan__ulist.m-0
+                        li
+                            i.fa-solid.fa-check.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-check.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-check.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                        li
+                            i.fa-solid.fa-xmark.fa-fw.yes 
+                            span Access All Text Lesssons
+                            i.fa-solid.fa-circle-info.help
+                    a.plans-page__plan__link.btn-shape.bg-green.d-block.w-fit.c-white(href="#") Jion
+
+            

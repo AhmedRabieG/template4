@@ -1,0 +1,144 @@
+extends include/layout
+block content
+    .page.d-flex
+        .slidebar.p-20.p-relative.bg-white 
+            h3.slidebar__title.mt-0.p-relative.txt-c.fs-20 Future Face
+            ul.slidebar__ulist
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="index.html") 
+                        i.fa-solid.fa-chart-column.fa-fw
+                        span Dashboard
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="settings.html") 
+                        i.fa-solid.fa-gear.fa-fw
+                        span Settings
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="profile.html") 
+                        i.fa-regular.fa-user.fa-fw
+                        span Profile
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="projects.html") 
+                        i.fa-solid.fa-diagram-project.fa-fw
+                        span Projects
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="courses.html") 
+                        i.fa-solid.fa-graduation-cap.fa-fw
+                        span Courses
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="friends.html") 
+                        i.fa-solid.fa-user-group.fa-fw
+                        span Friends
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="files.html") 
+                        i.fa-regular.fa-file.fa-fw
+                        span Files
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="plans.html") 
+                        i.fa-solid.fa-table-columns.fa-fw
+                        span Plans
+        .content.w-full             
+            //- start Header 
+            .head.bg-white.p-15.between-flex
+                .head__search.p-relative
+                    input.p-10(type="search" placeholder="type a key")
+                .head__icons.d-flex.align-center  
+                    span.icons__notification.p-relative 
+                        i.icons__notification--bell.fa-regular.fa-bell.fa-lg
+                    img.icons__user-img(src="assets/images/avatar.png" alt="avatar")
+            //- End Header 
+            h1.page-title.p-relative  Files 
+            .files-page.m-20.d-flex.gap-20
+                .files-page__stats.bg-white.rad-10.p-20.d-flex
+                    h2.mt-0.mb-15.txt-c-mobile File Statistics  
+                    .files-page__stats__item.d-flex.align-center.border-eee.p-10.rad-6.mb-15.fs-13 
+                        i.fa-regular.fa-file-pdf.fa-lg.blue.center-flex.c-blue.icon
+                        .files-page__stats__item__info
+                            span PDF Files
+                            span.c-grey.d-block.mt-5 130 
+                        .files-page__stats__item__size.c-grey 6 GB
+
+                    .files-page__stats__item.d-flex.align-center.border-eee.p-10.rad-6.mb-15.fs-13 
+                        i.fa-regular.fa-file-pdf.fa-lg.blue.center-flex.c-blue.icon
+                        .files-page__stats__item__info
+                            span PDF Files
+                            span.c-grey.d-block.mt-5 130 
+                        .files-page__stats__item__size.c-grey 6 GB
+                    
+                    .files-page__stats__item.d-flex.align-center.border-eee.p-10.rad-6.mb-15.fs-13 
+                        i.fa-regular.fa-file-pdf.fa-lg.blue.center-flex.c-blue.icon
+                        .files-page__stats__item__info
+                            span PDF Files
+                            span.c-grey.d-block.mt-5 130 
+                        .files-page__stats__item__size.c-grey 6 GB
+                    
+                    .files-page__stats__item.d-flex.align-center.border-eee.p-10.rad-6.mb-15.fs-13 
+                        i.fa-regular.fa-file-pdf.fa-lg.blue.center-flex.c-blue.icon
+                        .files-page__stats__item__info
+                            span PDF Files
+                            span.c-grey.d-block.mt-5 130 
+                        .files-page__stats__item__size.c-grey 6 GB
+
+                    a.files-page__stats__link.align-center.btn-shape.bg-blue.c-white.fs-13.w-fit(href="#") 
+                        i.fa-solid.fa-angles-up.mr-10    
+                        span.fs-15.w-fit Upload
+                
+                .files-page__content.d-grid.gap-20
+                    .files-page__file-type.bg-white.p-10.rad-10
+                        i.fa-solid.fa-download.c-gray.p-absolute
+                        .files-page__file-type__icon.txt-c
+                            img.mt-15.mb-15(src="assets/images/pdf.svg", alt="")
+                        div.txt-c.mb-10.fs-14 My File.pdf
+                        p.c-grey.fs-13 Saad
+                        .files-page__file-type__info.between-flex.c-gry.mt-10.pt-10.fs-13
+                            span 20/06/2020
+                            span 5.5MB
+                
+                    .files-page__file-type.bg-white.p-10.rad-10
+                        i.fa-solid.fa-download.c-gray.p-absolute
+                        .files-page__file-type__icon.txt-c
+                            img.mt-15.mb-15(src="assets/images/pdf.svg", alt="")
+                        div.txt-c.mb-10.fs-14 My File.pdf
+                        p.c-grey.fs-13 Saad
+                        .files-page__file-type__info.between-flex.c-gry.mt-10.pt-10.fs-13
+                            span 20/06/2020
+                            span 5.5MB
+                
+                    .files-page__file-type.bg-white.p-10.rad-10
+                        i.fa-solid.fa-download.c-gray.p-absolute
+                        .files-page__file-type__icon.txt-c
+                            img.mt-15.mb-15(src="assets/images/pdf.svg", alt="")
+                        div.txt-c.mb-10.fs-14 My File.pdf
+                        p.c-grey.fs-13 Saad
+                        .files-page__file-type__info.between-flex.c-gry.mt-10.pt-10.fs-13
+                            span 20/06/2020
+                            span 5.5MB
+                
+                    .files-page__file-type.bg-white.p-10.rad-10
+                        i.fa-solid.fa-download.c-gray.p-absolute
+                        .files-page__file-type__icon.txt-c
+                            img.mt-15.mb-15(src="assets/images/pdf.svg", alt="")
+                        div.txt-c.mb-10.fs-14 My File.pdf
+                        p.c-grey.fs-13 Saad
+                        .files-page__file-type__info.between-flex.c-gry.mt-10.pt-10.fs-13
+                            span 20/06/2020
+                            span 5.5MB
+                
+                    .files-page__file-type.bg-white.p-10.rad-10
+                        i.fa-solid.fa-download.c-gray.p-absolute
+                        .files-page__file-type__icon.txt-c
+                            img.mt-15.mb-15(src="assets/images/pdf.svg", alt="")
+                        div.txt-c.mb-10.fs-14 My File.pdf
+                        p.c-grey.fs-13 Saad
+                        .files-page__file-type__info.between-flex.c-gry.mt-10.pt-10.fs-13
+                            span 20/06/2020
+                            span 5.5MB
+
+                    .files-page__file-type.bg-white.p-10.rad-10
+                        i.fa-solid.fa-download.c-gray.p-absolute
+                        .files-page__file-type__icon.txt-c
+                            img.mt-15.mb-15(src="assets/images/pdf.svg", alt="")
+                        div.txt-c.mb-10.fs-14 My File.pdf
+                        p.c-grey.fs-13 Saad
+                        .files-page__file-type__info.between-flex.c-gry.mt-10.pt-10.fs-13
+                            span 20/06/2020
+                            span 5.5MB

@@ -1,0 +1,47 @@
+doctype html
+html(dir=ltr)
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        title 
+            block title 
+                if lang === "en"
+                    | SEC
+                else
+                    |
+
+        link(rel='icon' href=baseUrl + 'assets/images/logotit.png')
+        //- Styles Links Here
+
+        
+        link(rel='stylesheet' href= baseUrl + 'assets/css/animate.css') 
+        link(rel='stylesheet' href= baseUrl + 'assets/css/all.min.css')
+        link(rel='stylesheet' href= baseUrl + 'assets/css/style.css')
+        //- fonts 
+        link(rel='preconnect' href= baseUrl + 'https://fonts.googleapis.com')
+        link(rel='stylesheet' href= baseUrl + 'https://fonts.gstatic.com' crossorigin)
+        link(rel='stylesheet' href= baseUrl + 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap')
+
+
+
+    body
+        include components/mixins/index
+
+        //- Header Start
+        block header
+            include components/header 
+        //- Header End
+
+        block content 
+
+        //- Start Footer
+        block footer
+            include components/footer
+        //- End Footer
+
+
+        //- Site Scripts
+       
+        
+        block scripts

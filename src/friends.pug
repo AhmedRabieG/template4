@@ -1,0 +1,147 @@
+extends include/layout
+block content
+    .page.d-flex
+        .slidebar.p-20.p-relative.bg-white 
+            h3.slidebar__title.mt-0.p-relative.txt-c.fs-20 Future Face
+            ul.slidebar__ulist
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="index.html") 
+                        i.fa-solid.fa-chart-column.fa-fw
+                        span Dashboard
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="settings.html") 
+                        i.fa-solid.fa-gear.fa-fw
+                        span Settings
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="profile.html") 
+                        i.fa-regular.fa-user.fa-fw
+                        span Profile
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="projects.html") 
+                        i.fa-solid.fa-diagram-project.fa-fw
+                        span Projects
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="courses.html") 
+                        i.fa-solid.fa-graduation-cap.fa-fw
+                        span Courses
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="friends.html") 
+                        i.fa-solid.fa-user-group.fa-fw
+                        span Friends
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="files.html") 
+                        i.fa-regular.fa-file.fa-fw
+                        span Files
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="plans.html") 
+                        i.fa-solid.fa-table-columns.fa-fw
+                        span Plans
+        .content.w-full             
+            //- start Header 
+            .head.bg-white.p-15.between-flex
+                .head__search.p-relative
+                    input.p-10(type="search" placeholder="type a key")
+                .head__icons.d-flex.align-center  
+                    span.icons__notification.p-relative 
+                        i.icons__notification--bell.fa-regular.fa-bell.fa-lg
+                    img.icons__user-img(src="assets/images/avatar.png" alt="avatar")
+            //- End Header 
+            h1.page-title.p-relative  Friends 
+            .friends-page.d-grid.m-20.gap-20
+                .friends-page__friend.bg-white.rad-6.p-relative.p-20
+                    .friends-page__contact
+                        i.fa-solid.fa-phone.mr-10
+                        i.fa-regular.fa-envelope
+                    .friends-page__info.txt-c 
+                        img.rad-half.mt-10.mb-10.w-100.h-100(src="assets/images/friend-01.jpg", alt="")
+                        h4.m-0 Saad Asraan
+                        p.c-grey.fs-13.mt-5.mb-0  Front-End Developer
+                    .friends-page__icons.fs-14.p-relative
+                        div.mb-10
+                            i.fa-regular.fa-face-smile.fa-fw
+                            span  99 Friends
+                        div.mb-10
+                            i.fa-solid.fa-code-commit.fa-fw
+                            span  15 projects
+                        div
+                            i.fa-regular.fa-newspaper.fa-fw
+                            span  25 Articale
+                        span.vip.fw-bold.c-orange VIP
+                    .friends-page__action.between-flex.fs-13
+                        span.c-gray Joiend 02/10/2022
+                        div 
+                            a.bg-blue.c-white.btn-shape.mr-5(href="profile.html") Profile
+                            a.bg-red.c-white.btn-shape(href="#") Remove  
+
+                .friends-page__friend.bg-white.rad-6.p-relative.p-20
+                    .friends-page__contact
+                        i.fa-solid.fa-phone.mr-10
+                        i.fa-regular.fa-envelope
+                    .friends-page__info.txt-c 
+                        img.rad-half.mt-10.mb-10.w-100.h-100(src="assets/images/friend-01.jpg", alt="")
+                        h4.m-0 Saad Asraan
+                        p.c-grey.fs-13.mt-5.mb-0  Front-End Developer
+                    .friends-page__icons.fs-14.p-relative
+                        div.mb-10
+                            i.fa-regular.fa-face-smile.fa-fw
+                            span  99 Friends
+                        div.mb-10
+                            i.fa-solid.fa-code-commit.fa-fw
+                            span  15 projects
+                        div
+                            i.fa-regular.fa-newspaper.fa-fw
+                            span  25 Articale
+                        span.vip.fw-bold.c-orange VIP
+                    .friends-page__action.between-flex.fs-13
+                        span.c-gray Joiend 02/10/2022
+                        div 
+                            a.bg-blue.c-white.btn-shape.mr-5(href="profile.html") Profile
+                            a.bg-red.c-white.btn-shape(href="#") Remove  
+                .friends-page__friend.bg-white.rad-6.p-relative.p-20
+                    .friends-page__contact
+                        i.fa-solid.fa-phone.mr-10
+                        i.fa-regular.fa-envelope
+                    .friends-page__info.txt-c 
+                        img.rad-half.mt-10.mb-10.w-100.h-100(src="assets/images/friend-01.jpg", alt="")
+                        h4.m-0 Saad Asraan
+                        p.c-grey.fs-13.mt-5.mb-0  Front-End Developer
+                    .friends-page__icons.fs-14.p-relative
+                        div.mb-10
+                            i.fa-regular.fa-face-smile.fa-fw
+                            span  99 Friends
+                        div.mb-10
+                            i.fa-solid.fa-code-commit.fa-fw
+                            span  15 projects
+                        div
+                            i.fa-regular.fa-newspaper.fa-fw
+                            span  25 Articale
+                        span.vip.fw-bold.c-orange VIP
+                    .friends-page__action.between-flex.fs-13
+                        span.c-gray Joiend 02/10/2022
+                        div 
+                            a.bg-blue.c-white.btn-shape.mr-5(href="profile.html") Profile
+                            a.bg-red.c-white.btn-shape(href="#") Remove  
+                .friends-page__friend.bg-white.rad-6.p-relative.p-20
+                    .friends-page__contact
+                        i.fa-solid.fa-phone.mr-10
+                        i.fa-regular.fa-envelope
+                    .friends-page__info.txt-c 
+                        img.rad-half.mt-10.mb-10.w-100.h-100(src="assets/images/friend-01.jpg", alt="")
+                        h4.m-0 Saad Asraan
+                        p.c-grey.fs-13.mt-5.mb-0  Front-End Developer
+                    .friends-page__icons.fs-14.p-relative
+                        div.mb-10
+                            i.fa-regular.fa-face-smile.fa-fw
+                            span  99 Friends
+                        div.mb-10
+                            i.fa-solid.fa-code-commit.fa-fw
+                            span  15 projects
+                        div
+                            i.fa-regular.fa-newspaper.fa-fw
+                            span  25 Articale
+                        span.vip.fw-bold.c-orange VIP
+                    .friends-page__action.between-flex.fs-13
+                        span.c-gray Joiend 02/10/2022
+                        div 
+                            a.bg-blue.c-white.btn-shape.mr-5(href="profile.html") Profile
+                            a.bg-red.c-white.btn-shape(href="#") Remove  

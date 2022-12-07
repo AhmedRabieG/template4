@@ -1,0 +1,155 @@
+extends include/layout
+block content
+    .page.d-flex
+        .slidebar.p-20.p-relative.bg-white 
+            h3.slidebar__title.mt-0.p-relative.txt-c.fs-20 Future Face
+            ul.slidebar__ulist
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="index.html") 
+                        i.fa-solid.fa-chart-column.fa-fw
+                        span Dashboard
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="settings.html") 
+                        i.fa-solid.fa-gear.fa-fw
+                        span Settings
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="profile.html") 
+                        i.fa-regular.fa-user.fa-fw
+                        span Profile
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="projects.html") 
+                        i.fa-solid.fa-diagram-project.fa-fw
+                        span Projects
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="courses.html") 
+                        i.fa-solid.fa-graduation-cap.fa-fw
+                        span Courses
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="friends.html") 
+                        i.fa-solid.fa-user-group.fa-fw
+                        span Friends
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="files.html") 
+                        i.fa-regular.fa-file.fa-fw
+                        span Files
+                li.slidebar__item
+                    a.slidebar__item--link.p-10.d-flex.align-center.active.fs-14.c-black.rad-6(href="plans.html") 
+                        i.fa-solid.fa-table-columns.fa-fw
+                        span Plans
+        .content.w-full             
+            //- start Header 
+            .head.bg-white.p-15.between-flex
+                .head__search.p-relative
+                    input.p-10(type="search" placeholder="type a key")
+                .head__icons.d-flex.align-center  
+                    span.icons__notification.p-relative 
+                        i.icons__notification--bell.fa-regular.fa-bell.fa-lg
+                    img.icons__user-img(src="assets/images/avatar.png" alt="avatar")
+            //- End Header 
+            h1.page-title.p-relative  Settings 
+            .settings-page.d-grid.m-20.gap-20
+                //- Start Site Control 
+                .site-control.p-20.bg-white.rad-10 
+                    h2.mt-0.mb-10 Site Control
+                    p.mt-0.mb-20.c-gray.fs-15 Control The Website If There Is Maintenance
+                    div.site-control__info.mb-15.between-flex
+                        div 
+                            h4 Website Control
+                            p.c-grey.mt-5.mb-0.fs-13 Open/Close Website And Type The Reason
+                        div 
+                            label(for="check")  
+                                input.toggle-checkbox(type="checkbox" id="check" checked)
+                                .toggle-switch
+                    textarea.site-control__close-message.p-10.rad-10.d-block.w-full(placeholder="Close Message Content")  
+                //- End Site Control 
+
+                //- Start General Information
+                .gen-info.p-20.bg-white.rad-10
+                    h2.mt-0.mb-20 General Information 
+                    p.mt-0.mb-20.c-grey.fs-15 General Information About Your Account
+                    .gen-info__data.mb-15 
+                        label.fs-14.c-grey.d-block.mb-10.fw-bold(for="first") First Name 
+                        input.border-ccc.p-10.rad-6.d-block.w-full(type="text" id="first" placeholder="First Name ")
+                    .gen-info__data.mb-15 
+                        label.fs-14.c-grey.d-block.mb-10.fw-bold(for="second") Last Name 
+                        input.border-ccc.p-10.rad-6.d-block.w-full(type="text" id="second" placeholder="last Name ")
+                    .gen-info__data.mb-15 
+                        label.fs-14.c-grey.d-block.mb-10.fw-bold(for="third") Email
+                        input.email.border-ccc.p-10.rad-6.d-block.w-80.mr-20(type="email" id="third" placeholder="o@nn.sa" disabled )
+                        a.c-blue(href="#") Change 
+                //- End General Information
+
+                //- Start Security Information
+                .security-info.p-20.bg-white.rad-10
+                    h2.mt-0.mb-10 Security Information
+                    p.mt-0.mb-20.c-gray.fs-15 Security Information About Your Account
+                    .security-info__box.mb-15.between-flex.bb-eee 
+                        div 
+                            h4 Password
+                            p Last Change On 25/10/2021
+                        a.btn-shape.bg-blue.c-white(href="#") Change 
+                    .security-info__box.mb-15.between-flex.bb-eee 
+                        div 
+                            h4 Two-Factor Authentication
+                            p Enable/Disable The Feature
+                        label(for="auth")  
+                            input.toggle-checkbox(type="checkbox" id="auth" checked)
+                            .toggle-switch
+                    .security-info__box.mb-15.between-flex
+                        div 
+                            h4 Devices
+                            p Check The Login Devices List
+                        a.btn-shape.bg-eee.c-black(href="#") Devices 
+                //- End Security Information
+
+                //- Start Social Information
+                .sociel-info.p-20.bg-white.rad-10 
+                    h2.mt-0.mb-10 Social Information
+                    p.mt-0.mb-20.c-gray.fs-15 Social Media Information 
+                    .sociel-info__row.d-flex.align-center.mb-15 
+                        i.fa-brands.fa-twitter.center-flex.c-grey 
+                        input.w-full(type="text" placeholder="Twitter Username")
+                    .sociel-info__row.d-flex.align-center.mb-15 
+                        i.fa-brands.fa-facebook-f.center-flex.c-grey 
+                        input.w-full(type="text" placeholder="Facebook Username")
+                    .sociel-info__row.d-flex.align-center.mb-15 
+                        i.fa-brands.fa-linkedin.center-flex.c-grey 
+                        input.w-full(type="text" placeholder="Linkedin Username")
+                    .sociel-info__row.d-flex.align-center.mb-15 
+                        i.fa-brands.fa-youtube.center-flex.c-grey 
+                        input.w-full(type="text" placeholder="Youtube Username")
+                //- End Information
+
+                //- Start Information
+                .wid-control.p-20.bg-white.rad-10 
+                    h2.mt-0.mb-10  Widgets Control
+                    p.mt-0.mb-20.c-gray.fs-15 Show/Hide Widgets
+                    .wid-controls__control.d-flex.align-center.mb-15
+                        input.wid-controls__action(type="checkbox" id="one")
+                        label.wid-controls__name(for="one") Quick Draft 
+                    .wid-controls__control.d-flex.align-center.mb-15
+                        input.wid-controls__action(type="checkbox" id="two")
+                        label.wid-controls__name(for="two") Yearly Targets
+                    .wid-controls__control.d-flex.align-center.mb-15
+                        input.wid-controls__action(type="checkbox" id="three")
+                        label.wid-controls__name(for="three") Tickets Statistics
+                    .wid-controls__control.d-flex.align-center.mb-15
+                        input.wid-controls__action(type="checkbox" id="four")
+                        label.wid-controls__name(for="four") Latest News 
+                    .wid-controls__control.d-flex.align-center.mb-15
+                        input.wid-controls__action(type="checkbox" id="five")
+                        label.wid-controls__name(for="five") Latest Tasks
+                    .wid-controls__control.d-flex.align-center.mb-15
+                        input.wid-controls__action(type="checkbox" id="six")
+                        label.wid-controls__name(for="six") Top Search Items
+                //- End Information
+
+                //- Start Information
+                backup-manager.p-20.bg-white.rad-10 
+                    h2.mt-0.mb-10 Backup Manager
+                    p.mt-0.mb-20.c-gray.fs-15 Control Backup Time And Location
+                    
+                //- End Information
+
+                //- Start Information
+                //- End Information

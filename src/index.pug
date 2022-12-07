@@ -1,0 +1,422 @@
+﻿extends include/layout
+block content
+    .page.d-flex
+        .slidebar.p-20.p-relative.bg-white 
+            h3.slidebar__title.mt-0.p-relative.txt-c.fs-20 Future Face
+            ul.slidebar__ulist
+                li.slidebar__item
+                    a.slidebar__item--link.d-flex.align-center.c-black.rad-6.p-10.fs-14.active(href="index.html") 
+                        i.fa-solid.fa-chart-column.fa-fw
+                        span Dashboard
+                li.slidebar__item
+                    a.slidebar__item--link.d-flex.align-center.c-black.rad-6.p-10.fs-14.active(href="settings.html") 
+                        i.fa-solid.fa-gear.fa-fw
+                        span Settings
+                li.slidebar__item
+                    a.slidebar__item--link.d-flex.align-center.c-black.rad-6.p-10.fs-14.active(href="profile.html") 
+                        i.fa-regular.fa-user.fa-fw
+                        span Profile
+                li.slidebar__item
+                    a.slidebar__item--link.d-flex.align-center.c-black.rad-6.p-10.fs-14.active(href="projects.html") 
+                        i.fa-solid.fa-diagram-project.fa-fw
+                        span Projects
+                li.slidebar__item
+                    a.slidebar__item--link.d-flex.align-center.c-black.rad-6.p-10.fs-14.active(href="courses.html") 
+                        i.fa-solid.fa-graduation-cap.fa-fw
+                        span Courses
+                li.slidebar__item
+                    a.slidebar__item--link.d-flex.align-center.c-black.rad-6.p-10.fs-14.active(href="friends.html") 
+                        i.fa-solid.fa-user-group.fa-fw
+                        span Friends
+                li.slidebar__item
+                    a.slidebar__item--link.d-flex.align-center.c-black.rad-6.p-10.fs-14.active(href="files.html") 
+                        i.fa-regular.fa-file.fa-fw
+                        span Files
+                li.slidebar__item
+                    a.slidebar__item--link.d-flex.align-center.c-black.rad-6.p-10.fs-14.active(href="plans.html") 
+                        i.fa-solid.fa-table-columns.fa-fw
+                        span Plans
+        .content.w-full             
+            //- start Header 
+            .head.bg-white.between-flex.p-15
+                .head__search.p-relative
+                    input.p-10(type="search" placeholder="type a key")
+                .head__icons.d-flex.align-center  
+                    span.icons__notification.p-relative 
+                        i.icons__notification--bell.fa-regular.fa-bell.fa-lg
+                    img.icons__user-img(src="assets/images/avatar.png" alt="avatar")
+            //- End Header 
+            h1.page-title.p-relative  Dashboard 
+            .wrapper.d-grid.gap-20
+                //- Start Welcome Widget
+                .welcome.bg-white.rad-10.txt-c-mobile.block-mobile
+                    .welcome__intr.d-flex.space-betweeno.p-20.bg-eee
+                        .welcome__intro
+                            h2.welcome__intro__title.m-0 Welcome
+                            p.welcome__intro__name.c-gray.mt-5 Saad 
+                        img.welcome__intro__img(src="assets/images/welcome.png", alt="")
+                    img.welcome__avatar(src="assets/images/avatar.png", alt="avatar")
+                    .welcome__body.txt-c.d-flex.p-20.mt-20.mb-20.block-mobile
+                        .welcome__body__name Saad Asran
+                            span.welcome__body__position.d-block.mt-10.c-gray.fs-14 TL.Front-End Developer
+                        .welcome__body__prog-num 80
+                            span.welcome__body__prog-prog.d-block.mt-10.c-gray.fs-14 Projects
+                        .welcome__body__earn $8000
+                            span.welcome__body__earn-earn.d-block.mt-10.c-gray.fs-14 Earned
+                    a.welcome__profile-link.visit.d-block.w-fit.btn-shape.fs-14.c-white(href="#") Profile
+                //- End Welcome Widget
+
+                //- Start Quick Draft Widget
+                .quick-draft.p-20.rad-10.bg-white
+                    h2.quick-draft__title Quick Draft
+                    p.quick-draft__disc.c-gray.fs-15 Write A Draft For Your Ideas
+                    form.quick-draft__form(action="")
+                         input.d-block.p-10.mb-20.w-full.b-none.bg-eee.rad-6(type="text" placeholder="Title")
+                         textarea.d-block.mb-20.w-full.b-none.bg-eee.rad-6(name="", cols="", rows="" placeholder="Your Thought") 
+                         input.quick-draft__form--save.d-block.btn-shape.fs-14.bg-blue.c-white.b-none.w-fit(type="submit" value="Save")
+                //- End Quick Draft Widget
+
+                //- Start Targets Widget
+                .targets.p-20.bg-white.rad-10
+                    h2.targets__title.mt-0.mb-10  Yearly Targets 
+                    p.targets__disc.mt-0.mb-20.c-gray.fs-15 Targets Of the Year 
+                    
+                    .targets__row.center-flex.mb-20.blue
+                        .targets__row__icon.center-flex
+                            i.fa-solid.fa-dollar-sign.c-blue
+                        .targets__row__details 
+                            span.fs-14.c-gray Mony 
+                            span.d-block.fw-bold $20.000
+                            .targets__m-progress.p-relative 
+                                span.targets__m-progress-line.bg-blue.blue(style="width: 80%")
+                                    span.bg-blue 80%
+                    
+                    .targets__row.center-flex.mb-20.blue
+                        .targets__row__icon.center-flex
+                            i.fa-solid.fa-dollar-sign.c-orange
+                        .targets__row__details 
+                            span.fs-14.c-gray Mony 
+                            span.d-block.fw-bold $20.000
+                            .targets__m-progress.p-relative 
+                                span.targets__m-progress-line.bg-orange.orange(style="width: 80%")
+                                    span.bg-orange 80%
+                    
+                    .targets__row.center-flex.mb-20.blue
+                        .targets__row__icon.center-flex
+                            i.fa-solid.fa-dollar-sign.c-green
+                        .targets__row__details 
+                            span.fs-14.c-gray Mony 
+                            span.d-block.fw-bold $20.000
+                            .targets__m-progress.p-relative 
+                                span.targets__m-progress-line.bg-green.green(style="width: 80%")
+                                    span.bg-green 80%
+                //- End Targets Widget
+
+                //- Start Ticket Widget
+                .tickets.rad-10.p-20.bg-white
+                    h2.tickets__title.mb-10.mt-0 Tickets Statistics
+                    p.tickets__disc.mt-0.mb-20.c-gray.fs-15 Everything About Support Tickets
+
+                    .tickets__body.d-flex.txt-c.gap-20.wrap
+                        .tickets__body-box.p-20.rad-10.fs-14.c-gray
+                            i.fa-regular.fa-rectangle-list.mb-10.c-orange.fa-2x
+                            span.d-block.c-black.fw-bold.fs-25 2500
+                            p Total
+                    
+                        .tickets__body-box.p-20.rad-10.fs-14.c-gray
+                            i.fa-solid.fa-spinner.mb-10.c-blue.fa-2x
+                            span.d-block.c-black.fw-bold.fs-25 500
+                            p Pending
+                    
+                        .tickets__body-box.p-20.rad-10.fs-14.c-gray
+                            i.fa-regular.fa-circle-check.mb-10.c-green.fa-2x
+                            span.d-block.c-black.fw-bold.fs-25 1900
+                            p Closed
+                    
+                        .tickets__body-box.p-20.rad-10.fs-14.c-gray
+                            i.fa-regular.fa-circle-xmark.mb-10.c-red.fa-2x
+                            span.d-block.c-black.fw-bold.fs-25 100
+                            p Deleted
+                //- End Ticket Widget
+
+                //- Start Latest News  Widget
+                .latest-news.p-20.bg-white.rad-10.txt-c-mobile
+                    h2.latest-news__title.mt-0.mb-20 Latest News
+                    .latest-news__row.d-flex.align-center
+                        img.latest-news__img(src="assets/images/news-01.png", alt="")
+                        .latest-news__info
+                            h3 Created SASS Section
+                            p.mt-0.fs-14.c-gray New SASS Examples & Tutorials
+                        .latest-news__lablel.btn-shape.bg-eee.fs-13 3 Days Ago
+                    .latest-news__row.d-flex.align-center
+                        img.latest-news__img(src="assets/images/news-01.png", alt="")
+                        .latest-news__info
+                            h3 Changed The Design
+                            p.mt-0.fs-14.c-gray A Brand New Website Design
+                        .latest-news__lablel.btn-shape.bg-eee.fs-13 3 Days Ago
+                    .latest-news__row.d-flex.align-center
+                        img.latest-news__img(src="assets/images/news-03.png", alt="")
+                        .latest-news__info
+                            h3 Created SASS Section
+                            p.mt-0.fs-14.c-gray New SASS Examples & Tutorials
+                        .latest-news__lablel.btn-shape.bg-eee.fs-13 3 Days Ago
+                    .latest-news__row.d-flex.align-center
+                        img.latest-news__img(src="assets/images/news-04.png", alt="")
+                        .latest-news__info
+                            h3 Created SASS Section
+                            p.mt-0.fs-14.c-gray New SASS Examples & Tutorials   
+                        .latest-news__lablel.btn-shape.bg-eee.fs-13 3 Days Ago 
+                //- End Latest News  Widget
+
+                //- Start Start Taskes Widget
+                .tasks.p-20.bg-white.rad-10
+                    h2.tasks__title.mt-0.mb-30 Latest Tasks
+                    .tasks__row.between-flex.mb-4
+                        .tasks__info
+                            h3.mt-0.fs-15.fw-bold Record One New Video
+                            p.m-0.c-gray Record Python Create Exe Project
+                        i.tasks__del-icon.fa-solid.fa-trash-can.delete 
+                    .tasks__row.between-flex.mb-4
+                        .tasks__info
+                            h3.mt-0.fs-15.fw-bold Record One New Video
+                            p.m-0.c-gray Record Python Create Exe Project
+                        i.tasks__del-icon.fa-solid.fa-trash-can.delete 
+                    .tasks__row.between-flex.mb-4.done
+                        .tasks__info
+                            h3.mt-0.fs-15.fw-bold Record One New Video
+                            p.m-0.c-gray Record Python Create Exe Project
+                        i.tasks__del-icon.fa-solid.fa-trash-can.delete 
+                    .tasks__row.between-flex.mb-4
+                        .tasks__info
+                            h3.mt-0.fs-15.fw-bold Record One New Video
+                            p.m-0.c-gray Record Python Create Exe Project
+                        i.tasks__del-icon.fa-solid.fa-trash-can.delete 
+                //- End Start Taskes Widget
+
+                //- Start Search words Widget
+                .search-items.p-20.bg-white.rad-10
+                    h2.search-items__title.mt-0.mb-20 Top Search Items
+                    .search-items__head.d-flex.space-between.c-gray.mb-10
+                        div Keyword
+                        div Search Count 
+                    .search-items__item-one.d-flex.space-between.pt-15.pb-15
+                        span JavaScript
+                        span.bg-eee.bg-33.fs-13.btn-shape 220
+                    .search-items__item-one.d-flex.space-between.pt-15.pb-15
+                        span PHP
+                        span.bg-eee.bg-33.fs-13.btn-shape 220
+                    .search-items__item-one.d-flex.space-between.pt-15.pb-15
+                        span Code
+                        span.bg-eee.bg-33.fs-13.btn-shape 220
+                    .search-items__item-one.d-flex.space-between.pt-15.pb-15
+                        span Design
+                        span.bg-eee.bg-33.fs-13.btn-shape 220
+                    .search-items__item-one.d-flex.space-between.pt-15.pb-15
+                        span Logic
+                        span.bg-eee.bg-33.fs-13.btn-shape 220
+                //- End Search words Widget
+
+                //- Start Latest Uploads Widget
+                .latest-uploads.p-20.bg-white.rad-10
+                    h2.mt-0.mb-20 Latest Uploads
+                    ul 
+                        li.latest-uploads__item.between-flex.pb-10.mb-10 
+                            .latest-uploads__content.d-flex.align-center 
+                                img.latest-uploads__content__img(src="assets/images/pdf.svg", alt="pdf")
+                                .latest-uploads__content__info 
+                                    spand.d-block my-file.pdf
+                                    span.fs-15.c-gray Saad
+                            .latest-uploads__size.bg-eee.btn-shape.fs-14 2.9
+                        li.latest-uploads__item.between-flex.pb-10.mb-10 
+                            .latest-uploads__content.d-flex.align-center 
+                                img.latest-uploads__content__img(src="assets/images/eps.svg", alt="pdf")
+                                .latest-uploads__content__info 
+                                    spand.d-block my-file.pdf
+                                    span.fs-15.c-gray Saad
+                            .latest-uploads__size.bg-eee.btn-shape.fs-14 2.9
+                        li.latest-uploads__item.between-flex.pb-10.mb-10 
+                            .latest-uploads__content.d-flex.align-center 
+                                img.latest-uploads__content__img(src="assets/images/avi.svg", alt="pdf")
+                                .latest-uploads__content__info 
+                                    spand.d-block my-file.pdf
+                                    span.fs-15.c-gray Saad
+                            .latest-uploads__size.bg-eee.btn-shape.fs-14 2.9
+                        li.latest-uploads__item.between-flex.pb-10.mb-10 
+                            .latest-uploads__content.d-flex.align-center 
+                                img.latest-uploads__content__img(src="assets/images/psd.svg", alt="pdf")
+                                .latest-uploads__content__info 
+                                    spand.d-block my-file.pdf
+                                    span.fs-15.c-gray Saad
+                            .latest-uploads__size.bg-eee.btn-shape.fs-14 2.9
+                        li.latest-uploads__item.between-flex.pb-10.mb-10 
+                            .latest-uploads__content.d-flex.align-center 
+                                img.latest-uploads__content__img(src="assets/images/zip.svg", alt="pdf")
+                                .latest-uploads__content__info 
+                                    spand.d-block my-file.pdf
+                                    span.fs-15.c-gray Saad
+                            .latest-uploads__size.bg-eee.btn-shape.fs-14 2.9
+                //- End Latest Uploads Widget
+                        
+                //- Start Last Project Progress Widget
+                .last-project.p-20.bg-white.rad-10.p-relative
+                    h2.mt-0.mb-20 Last Project Progress
+                    ul.last-project__progress.m-0.p-relative
+                        li.last-project__step.mt-25.d-flex.align-center.done Got the Project
+                        li.last-project__step.mt-25.d-flex.align-center.done Got the Project
+                        li.last-project__step.mt-25.d-flex.align-center.done Got the Project
+                        li.last-project__step.mt-25.d-flex.align-center.current Got the Project
+                        li.last-project__step.mt-25.d-flex.align-center Got the Project
+                    img.last-project__img.hide-mobile(src="assets/images/project.png", alt="")    
+                //- End Last Project Progress Widget
+
+                //- Start Reminders Widget
+                .reminders.p-20.bg-white.rad-10.p-relative
+                    h2.mt-0.mb-30 Reminders
+                    ul.reminders__ulist.m-0 
+                        li.reminders__item.d-flex.align-center.mt-15
+                            span.reminders__circle.bg-blue.mr-15.d-block.rad-half
+                            .reminders__info.pl-15.blue
+                                p.fs-14.fw-bold.mt-0 Check My Tasks List
+                                span.fs-13.c-gray 28/09/2022 - 12:00am
+                        li.reminders__item.d-flex.align-center.mt-15
+                            span.reminders__circle.bg-green.mr-15.d-block.rad-half
+                            .reminders__info.pl-15.green
+                                p.fs-14.fw-bold.mt-0 Check My Tasks List
+                                span.fs-13.c-gray 28/09/2022 - 12:00am
+                        li.reminders__item.d-flex.align-center.mt-15
+                            span.reminders__circle.bg-orange.mr-15.d-block.rad-half
+                            .reminders__info.pl-15.orange
+                                p.fs-14.fw-bold.mt-0 Check My Tasks List
+                                span.fs-13.c-gray 28/09/2022 - 12:00am
+                        li.reminders__item.d-flex.align-center.mt-15
+                            span.reminders__circle.bg-red.mr-15.d-block.rad-half
+                            .reminders__info.pl-15.red
+                                p.fs-14.fw-bold.mt-0 Check My Tasks List
+                                span.fs-13.c-gray 28/09/2022 - 12:00am
+                //- End Reminders Widget
+
+                //- Start Latest Post Widget
+                .latest-post.p-20.bg-white.rad-10.p-relative
+                    h2.mt-0.mb-30 Latest Post
+                    .latest-post__top.d-flex.align-center
+                         img.latest-post__avatar.mr-15(src="assets/images/avatar.png", alt="")
+                         .latest-post__info
+                            span.d-block.mb-2.fw-bold Saad Asran
+                            span.c-gray About 3 Hours Ago
+                    .latest-post__post-content.txt-c-mobile.pt-20.pb-20.mt-20.mb-20 You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.
+                    .latest-post__post-stats.between-flex.c-gray
+                        .latest-post__post-stats__liks
+                            i.fa-regular.fa-heart
+                            span.ml-5 1.8k
+                        .latest-post__post-stats__comments
+                            i.fa-regular.fa-comments
+                            span.ml-5 500
+                //- End Latest Post Widget
+
+                //- Start Social Media Stats Widget
+                .social-media.p-20.bg-white.rad-10.p-relative 
+                    h2.mt-0.mb-25 Social Media Statistics
+                    .social-media__box.twitter.p-15.p-relative.mb-10.between-flex
+                        i.social-media__box__icon.fa-brands.fa-twitter.fa-2x.c-white.center-flex
+                        span 90K Followers
+                        a.social-media__box--link.fs-13.c-white.btn-shape(href="#") Follow  
+                    
+                    .social-media__box.facebook.p-15.p-relative.mb-10.between-flex
+                        i.social-media__box__icon.fa-brands.fa-facebook-f.fa-2x.c-white.center-flex
+                        span 2M Like
+                        a.social-media__box--link.fs-13.c-white.btn-shape(href="#") Like 
+                    
+                    .social-media__box.youtube.p-15.p-relative.mb-10.between-flex
+                        i.social-media__box__icon.fa-brands.fa-youtube.fa-2x.c-white.center-flex
+                        span 1M Subs
+                        a.social-media__box--link.fs-13.c-white.btn-shape(href="#") Subscribe  
+                    
+                    .social-media__box.linkedin.p-15.p-relative.mb-10.between-flex
+                        i.social-media__box__icon.fa-brands.fa-linkedin.fa-2x.c-white.center-flex
+                        span 70K Followers
+                        a.social-media__box--link.fs-13.c-white.btn-shape(href="#") Follow  
+                //- End Social Media Stats Widget
+
+            //- Start Projects Widget
+            .projects.p20.bg-white.rad-10.m-20.p-20
+                h2.mt-0.mb20 Projects
+                .projects__resp-table
+                    table.projects__table.fs-15.w-full 
+                        thead.projects__table__head
+                            tr 
+                                td Name 
+                                td Finish Date 
+                                td Client 
+                                td Price 
+                                td team 
+                                td Status 
+                        tbody.projects__table__body
+                            tr 
+                                td Ministry Wikipedia	 
+                                td 10 May 2022	
+                                td Ministry 
+                                td $5300 
+                                td 
+                                    img(src="assets/images/team-01.png", alt="")
+                                    img(src="assets/images/team-02.png", alt="")
+                                    img(src="assets/images/team-03.png", alt="")
+                                    img(src="assets/images/team-05.png", alt="")
+                                td 
+                                    span.label.bg-orange.c-white Pending 
+                            tr 
+                                td Elzero Shop 
+                                td 12 Oct 2021	
+                                td Elzero Company	 
+                                td $1500 
+                                td 
+                                    img(src="assets/images/team-01.png", alt="")
+                                    img(src="assets/images/team-02.png", alt="")
+                                    img(src="assets/images/team-03.png", alt="")
+                                    img(src="assets/images/team-04.png", alt="")
+                                td 
+                                    span.label.bg-blue.c-white In Progress
+                            tr 
+                                td Bouba App		 
+                                td 05 Sep 2021	
+                                td Bouba 
+                                td $800 
+                                td 
+                                    img(src="assets/images/team-02.png", alt="")
+                                    img(src="assets/images/team-03.png", alt="")
+                                    img(src="assets/images/team-05.png", alt="")
+                                td 
+                                    span.label.bg-green.c-white Completed
+                            tr 
+                                td Mahmoud Website	 
+                                td 22 May 2021	
+                                td Mahmoud 
+                                td $600 
+                                td 
+                                    img(src="assets/images/team-01.png", alt="")
+                                    img(src="assets/images/team-02.png", alt="")
+                                td 
+                                    span.label.bg-green.c-white Completed
+                            tr 
+                                td Sayed Website	 
+                                td 24 May 2021	
+                                td Sayed 
+                                td $300	
+                                td 
+                                    img(src="assets/images/team-01.png", alt="")
+                                    img(src="assets/images/team-02.png", alt="")
+                                    img(src="assets/images/team-03.png", alt="")
+                                td 
+                                    span.label.bg-red.c-white Rejected
+                            tr 
+                                td Arena Application 
+                                td 01 Mar 2021	
+                                td Arena Company 
+                                td $2600
+                                td 
+                                    img(src="assets/images/team-01.png", alt="")
+                                    img(src="assets/images/team-02.png", alt="")
+                                    img(src="assets/images/team-03.png", alt="")
+                                    img(src="assets/images/team-04.png", alt="")
+                                td 
+                                    span.label.bg-green.c-white Completed
+            //- End Projects Widget
